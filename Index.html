@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id = 'topbar'>
+    <p> Hello! I'm Willem, and welcome to my Website! </p>
+    <img id = 'PixelizedMe' src='Pixelized Me.jpg'/>
+    </div>
+
+    <div id = 'mainsection'>
+      <p> This is my expiremental Coding Website. </p>
+      <p> Here I make:games, music, animations, and pictures! </p>
+      <button id= "mainbutton" type= 'button' onclick = sayhello()>Say Hi!</button> 
+
+    <div id= 'loop-section'>  
+      <button id= "mainbutton" type='button' onclick = explore()>Go exploring!</button> 
+    </div> 
+
+      <button id= "mainbutton" type='button' onclick = playgame()>Play a game!</button>
+      <button id= "mainbutton" onclick="location.href='animation.html'">Watch animation</button>
+      <button id= "mainbutton" onclick="location.href='info.html'">Info</button>
+      <button id= "mainbutton" onclick="location.href='bookreveiws.html'">Book Reveiws</button>
+      <button id= "mainbutton" onclick="location.href='videos.html'">Learn to code!</button>
+      
+    </div>
+
+</body>
+
+  <script>
+
+    function sayhello() {
+      var name = prompt ("Hi, what's your name?");
+      if (name !== null) {
+          window.alert("It's nice to meet you "+name+"! Thanks for checking out my Website!");
+        }
+  }
+  function explore() {
+
+    var locations = ['an old, spooky temple', 'a village', 'an underwater palace', 'a deep, dark cave', 'a huge pyramid'];
+
+    var items = ['a diamond', 'a pumpkin', 'a golden apple', 'lots of bats', 'treasure', 'an iorn helmet', 'some coal', 'some dynamite...UH-OH!'];
+    var chosenLocation = locations[Math.floor (Math.random()*locations.length)];
+    var chosenitem = items[Math.floor (Math.random()*items.length)];
+    document.getElementById("loop-section").innerHTML = "";
+    $('#loop-section').append("<p>I went exploring earlier and found "+chosenLocation+". Inside I found "+chosenitem+" </p>");
+
+      }
+
+    function playgame() {
+    
+    var favperson = prompt("Who is your favorite person?");
+    
+    var pickedmonster = prompt("What do you think the monster in this game should be?");
+    
+    if (favperson && pickedmonster) {
+
+    var build = window.prompt(favperson+ " is exploring and its getting dark! What should he/she build? (Type bed, house, or nothing)");
+
+      }
+    
+    if (build == "nothing") {
+
+    window.alert(favperson+ " spends his/her day playing and has to run from "+pickedmonster+"s! Try again!");
+
+      }
+
+    if (build == "bed") {
+
+    window.alert(favperson+ " builds a bed and goes to sleep. But he/she wakes up surrounded by "+pickedmonster+"s! Try again");
+      
+      }
+    
+   if (build == "house") {
+
+    window.alert(favperson+ " builds his/herself a house to keep the "+pickedmonster+"s out.");
+    wolf = window.prompt("A wolf appears! Should "+favperson+" run or try to tame it? (Type tame or somthing else)");
+
+    if (wolf == "tame") {
+
+      window.alert(favperson+ " tames the wolf! It keeps him/her safe from "+pickedmonster+"s. Good job!");
+      
+    } else {
+
+      window.alert(favperson+ " runs from the wolf and has to leave the house behind! Try again!");
+      
+      }
+
+    }
+    }
+
+  </script> 
+
+</html>
