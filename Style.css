@@ -1,6 +1,12 @@
 p{
 
   color: rgb(0, 0, 0);
+  font-size: 4vmin;
+  display: block;
+  margin-left: 3%;
+  margin-right: 3%;
+  word-break: keep-all;
+
 
 }
 
@@ -69,16 +75,6 @@ body{
 
 }
 
-p{
-
-    font-size: 4vmin;
-    display: block;
-    margin-left: 3%;
-    margin-right: 3%;
-    word-break: keep-all;
-    color: black;
-
-}
 
 #mainbutton{
 
