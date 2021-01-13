@@ -115,9 +115,10 @@ body{
 
   float:left;
   margin-left:2%;
-  margin-top:25px;
+  margin-top:-250px;
   max-width:95%;
   max-height:5%; 
+  padding-top: 25%;
 
 } 
 
@@ -137,4 +138,8 @@ margin-top:-50%;
 
 #Stickwars{
   border: groove 5px;
+}
+
+#mainspan{
+  left: -200%;
 }
