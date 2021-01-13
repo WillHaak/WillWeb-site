@@ -124,6 +124,7 @@ body{
 #Acyclops {
 
   margin-left:0%;
+  border: groove 5px;
 
 }
 
@@ -132,4 +133,8 @@ body{
 margin-left:75%;
 margin-top:-50%;
 
+}
+
+#Stickwars{
+  border: groove 5px;
 }
