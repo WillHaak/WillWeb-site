@@ -41,13 +41,27 @@
     function sayhello() {
       var name = prompt ("Hi, what's your name?");
       if (name !== null) {
-          window.alert("It's nice to meet you "+name+"! Thanks for checking out my Website!");
+          window.alert("It's nice to meet you "+name+"! Thanks for checking out my website!");
         }
-      var age = prompt ("I'm 10. How old are you, "+name+"?");
-      if (age !== null) {
-          window.alert("Nice. Please enjoy my website and all it's functions!");
+      var favcolor = prompt ("What's your favorite color, "+name+"?");
+      if (favcolor == "red") {
+          window.alert("That's my favorite too!");
+    }
+      var favnumber = prompt ("What's your favorite number, "+name+"?");
+      if (favnumber == "12") {
+        window.alert("That's mine to!");
       }
+      if (favnumber == isNaN) {
+        window.alert("That's not a number!");
       }
+      if (favnumber < 50) {
+        window.alert("Cool! Please enjoy my website and it's functions!")
+      }
+      if (favnumber > 50) {
+        window.alert("Wow! That's a big number! Please enjoy my website and it's functions!")
+      }
+    }
+          
         
   
   function explore() {
